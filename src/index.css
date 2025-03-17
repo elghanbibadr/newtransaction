@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.bottom-actions {
+    position: fixed;
+    bottom: 16px;
+    left: 0;
+    padding: 10px;
+    margin-inline: auto;
+    left: 0;
+    right: 0;
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+    border-radius: 12px;
+  }
+
+  @media screen and (min-width:700px) {
+    .bottom-actions{
+      width: 50%;
+
+    }
+  }
+  
+  .action-button {
+    flex: 1;
+    border-radius: 8px !important;
+  }
+  
+
+  .step-indicator {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+  }
+
+  .step-title {
+    flex: 1;
+    text-align: center;
+    padding: 4px;
+    font-size: 0.7rem;
+    text-wrap: "no";
+    font-weight: 500;
+    color: #666;
+    position: relative;
+  }
+
+  .step-title.active {
+    font-weight: bold;
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+  }
