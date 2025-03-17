@@ -27,7 +27,7 @@ export const PaymentMethodSelection = forwardRef<
     submitPaymentMethod: () => {
       if (validateSelection() && selectedPaymentMethod) {
         // GOT STUCK IN THIS TYPSCRIOT ISSUE AS WELL (sorry)
-        mutate(selectedPaymentMethod)
+        mutate()
         onNext(selectedPaymentMethod); // `selectedPaymentMethod` is guaranteed to be valid
       //  POST THE PAYMENT METHODE TO THE BACKEND
     }

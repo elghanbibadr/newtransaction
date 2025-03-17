@@ -1,4 +1,4 @@
-import React from "react";
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { PaymentMethod } from "../../types/paymentMethodSelection.types";
 import { useAtom } from "jotai";
 import { getPaymentMethodsAtom } from "../../store/paymentMethodSelection.atoms";

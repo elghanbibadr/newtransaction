@@ -1,5 +1,4 @@
 import { Button } from "antd-mobile";
-import React from "react";
 interface BottomNavigationBarProps {
   currentStep: number;
   onSubmit: () => void;
